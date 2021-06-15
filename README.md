@@ -1,4 +1,6 @@
 # yuketangHelper
+## 2020.6.15
+针对电子科技大学进行了更新，学校id都已经改好，只需更改csrftoken和sessionid，以下为作者原文
 ## 华工研究生雨课堂网课脚本代码
 homeworkHelper.py是雨课堂网课作业刷题自动脚本  
 videoHelper.py是雨课堂网课视频观看自动脚本  
