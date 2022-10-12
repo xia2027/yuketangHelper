@@ -8,8 +8,8 @@ import json
 
 # 以下的csrftoken和sessionid需要改成自己登录后的cookie中对应的字段！！！！而且脚本需在登录雨课堂状态下使用
 # 登录上雨课堂，然后按F12-->选Application-->找到雨课堂的cookies，寻找csrftoken和sessionid字段，并复制到下面两行即可
-csrftoken = "" #需改成自己的
-sessionid = "" #需改成自己的
+csrftoken = "pXcRsS5FSGeMxPzprw3Lm7aZgzW92FyR" #需改成自己的
+sessionid = "sinee0783q58psqe6jd050asiogzol9q" #需改成自己的
 
 # 以下字段不用改，下面的代码也不用改动
 user_id = ""
@@ -149,8 +149,8 @@ if __name__ == "__main__":
         raise Exception("也许是网路问题，获取不了user_id,请试着重新运行!!! please re-run this program!")
 
     # 然后要获取教室id
-    get_classroom_id = "https://gruestc.yuketang.cn/mooc-api/v1/lms/user/user-courses/?status=1&page=1&no_page=1&term=latest&uv_id=3194"
-    submit_url = "https://gruestc.yuketang.cn/mooc-api/v1/lms/exercise/problem_apply/?term=latest&uv_id=3194"
+    get_classroom_id = "https://www.yuketang.cn/v2/web/studentLog/14363310"
+    submit_url = "https://www.yuketang.cn/v2/web/studentLog/14363310"
     classroom_id_response = requests.get(url=get_classroom_id, headers=headers)
     try:
         for ins in json.loads(classroom_id_response.text)["data"]["product_list"]:
